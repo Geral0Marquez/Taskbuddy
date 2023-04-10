@@ -1,170 +1,88 @@
 'use strict';
 
+// modal variables
+const modal = document.querySelector('[data-modal]');
+const modalCloseBtn = document.querySelector('[data-modal-close]');
+const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
+
+// modal function
+const modalCloseFunc = function () { modal.classList.add('closed') }
+
+// modal eventListener
+modalCloseOverlay.addEventListener('click', modalCloseFunc);
+modalCloseBtn.addEventListener('click', modalCloseFunc);
 
 
-/**
- * PRELOAD
- * 
- * loading will be end after document is loaded
- */
 
-const preloader = document.querySelector("[data-preaload]");
 
-window.addEventListener("load", function () {
-  preloader.classList.add("loaded");
-  document.body.classList.add("loaded");
+
+// notification toast variables
+const notificationToast = document.querySelector('[data-toast]');
+const toastCloseBtn = document.querySelector('[data-toast-close]');
+
+// notification toast eventListener
+toastCloseBtn.addEventListener('click', function () {
+  notificationToast.classList.add('closed');
 });
 
 
 
-/**
- * add event listener on multiple elements
- */
-
-const addEventOnElements = function (elements, eventType, callback) {
-  for (let i = 0, len = elements.length; i < len; i++) {
-    elements[i].addEventListener(eventType, callback);
-  }
-}
 
 
+// mobile menu variables
+const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
+const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
+const mobileMenuCloseBtn = document.querySelectorAll('[data-mobile-menu-close-btn]');
+const overlay = document.querySelector('[data-overlay]');
 
-/**
- * NAVBAR
- */
+for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
 
-const navbar = document.querySelector("[data-navbar]");
-const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-const overlay = document.querySelector("[data-overlay]");
-
-const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  overlay.classList.toggle("active");
-  document.body.classList.toggle("nav-active");
-}
-
-addEventOnElements(navTogglers, "click", toggleNavbar);
-
-
-
-/**
- * HEADER & BACK TOP BTN
- */
-
-const header = document.querySelector("[data-header]");
-const backTopBtn = document.querySelector("[data-back-top-btn]");
-
-let lastScrollPos = 0;
-
-const hideHeader = function () {
-  const isScrollBottom = lastScrollPos < window.scrollY;
-  if (isScrollBottom) {
-    header.classList.add("hide");
-  } else {
-    header.classList.remove("hide");
+  // mobile menu function
+  const mobileMenuCloseFunc = function () {
+    mobileMenu[i].classList.remove('active');
+    overlay.classList.remove('active');
   }
 
-  lastScrollPos = window.scrollY;
+  mobileMenuOpenBtn[i].addEventListener('click', function () {
+    mobileMenu[i].classList.add('active');
+    overlay.classList.add('active');
+  });
+
+  mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
+  overlay.addEventListener('click', mobileMenuCloseFunc);
+
 }
 
-window.addEventListener("scroll", function () {
-  if (window.scrollY >= 50) {
-    header.classList.add("active");
-    backTopBtn.classList.add("active");
-    hideHeader();
-  } else {
-    header.classList.remove("active");
-    backTopBtn.classList.remove("active");
-  }
-});
 
 
 
-/**
- * HERO SLIDER
- */
 
-const heroSlider = document.querySelector("[data-hero-slider]");
-const heroSliderItems = document.querySelectorAll("[data-hero-slider-item]");
-const heroSliderPrevBtn = document.querySelector("[data-prev-btn]");
-const heroSliderNextBtn = document.querySelector("[data-next-btn]");
+// accordion variables
+const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
+const accordion = document.querySelectorAll('[data-accordion]');
 
-let currentSlidePos = 0;
-let lastActiveSliderItem = heroSliderItems[0];
+for (let i = 0; i < accordionBtn.length; i++) {
 
-const updateSliderPos = function () {
-  lastActiveSliderItem.classList.remove("active");
-  heroSliderItems[currentSlidePos].classList.add("active");
-  lastActiveSliderItem = heroSliderItems[currentSlidePos];
+  accordionBtn[i].addEventListener('click', function () {
+
+    const clickedBtn = this.nextElementSibling.classList.contains('active');
+
+    for (let i = 0; i < accordion.length; i++) {
+
+      if (clickedBtn) break;
+
+      if (accordion[i].classList.contains('active')) {
+
+        accordion[i].classList.remove('active');
+        accordionBtn[i].classList.remove('active');
+
+      }
+
+    }
+
+    this.nextElementSibling.classList.toggle('active');
+    this.classList.toggle('active');
+
+  });
+
 }
-
-const slideNext = function () {
-  if (currentSlidePos >= heroSliderItems.length - 1) {
-    currentSlidePos = 0;
-  } else {
-    currentSlidePos++;
-  }
-
-  updateSliderPos();
-}
-
-heroSliderNextBtn.addEventListener("click", slideNext);
-
-const slidePrev = function () {
-  if (currentSlidePos <= 0) {
-    currentSlidePos = heroSliderItems.length - 1;
-  } else {
-    currentSlidePos--;
-  }
-
-  updateSliderPos();
-}
-
-heroSliderPrevBtn.addEventListener("click", slidePrev);
-
-/**
- * auto slide
- */
-
-let autoSlideInterval;
-
-const autoSlide = function () {
-  autoSlideInterval = setInterval(function () {
-    slideNext();
-  }, 7000);
-}
-
-addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {
-  clearInterval(autoSlideInterval);
-});
-
-addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
-
-window.addEventListener("load", autoSlide);
-
-
-
-/**
- * PARALLAX EFFECT
- */
-
-const parallaxItems = document.querySelectorAll("[data-parallax-item]");
-
-let x, y;
-
-window.addEventListener("mousemove", function (event) {
-
-  x = (event.clientX / window.innerWidth * 10) - 5;
-  y = (event.clientY / window.innerHeight * 10) - 5;
-
-  // reverse the number eg. 20 -> -20, -5 -> 5
-  x = x - (x * 2);
-  y = y - (y * 2);
-
-  for (let i = 0, len = parallaxItems.length; i < len; i++) {
-    x = x * Number(parallaxItems[i].dataset.parallaxSpeed);
-    y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
-    parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
-  }
-
-});

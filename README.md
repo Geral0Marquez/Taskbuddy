@@ -1,54 +1,44 @@
-<div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/grilli)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/grilli?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/grilli?style=social)
-  [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/CjVGp5kGHxA?style=social)](https://youtu.be/CjVGp5kGHxA)
+# Anon - An eCommerce Website
 
-  <br />
-  <br />
+![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/anon-ecommerce-website)
+![GitHub stars](https://img.shields.io/github/stars/codewithsadee/anon-ecommerce-website?style=social)
+![GitHub forks](https://img.shields.io/github/forks/codewithsadee/anon-ecommerce-website?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
+[![YouTube Video Views](https://img.shields.io/youtube/views/3l8Lob4ysI0?style=social)](https://youtu.be/3l8Lob4ysI0)
 
-  <h2 align="center">Grilli - Restaurant Website</h2>
+Anon is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
 
-  Grilli is a fully responsive restaurant website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
+## Demo
 
-  <a href="https://codewithsadee.github.io/grilli/"><strong>➥ Live Demo</strong></a>
+![Anon Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
+![Anon Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
 
-</div>
-
-<br />
-
-### Demo Screeshots
-
-![Grilli Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-
-### Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
 * [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-### Run Locally
+## Installing Anon
 
-To run **Grilli** locally, run this command on your git bash:
+To install **Anon**, follow these steps:
 
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/grilli.git
+sudo git clone https://github.com/codewithsadee/anon-ecommerce-website.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/grilli.git
+git clone https://github.com/codewithsadee/anon-ecommerce-website.git
 ```
 
-### Contact
+## Contact
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
 
-### License
+## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is **free to use** and does not contains any license.
