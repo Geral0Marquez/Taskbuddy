@@ -33,21 +33,21 @@ const taskCompleteSound = new Audio("./assets/sounds/task-complete.mp3");
 const getWeekDayName = function (dayNumber) {
   switch (dayNumber) {
     case 0:
-      return "Domingo";
+      return "Sunday";
     case 1:
-      return "Lunes";
+      return "Monday";
     case 2:
-      return "Martes";
+      return "Tuesday";
     case 3:
-      return "Miercoles";
+      return "Wednesday";
     case 4:
-      return "Jueves";
+      return "Thursday";
     case 5:
-      return "Viernes";
+      return "Friday";
     case 6:
-      return "Sábado";
+      return "Satureday";
     default:
-      return "No es un día válido";
+      return "Not a valid day";
   }
 }
 
