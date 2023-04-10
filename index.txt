@@ -1,51 +1,50 @@
-Music Player
+Taskbuddy
 
-A web music player html template made by codewithsadee
+My Day
+Saturday, July 2
 
+aria-label = Toggle menu
+<ion-icon name="ellipsis-horizontal" aria-hidde="true"></ion-icon>
 
+Theme
 
-#---------- TOP APP BAR ----------#
+<ion-icon name="information-circle-outline"></ion-icon>
+App info
 
-<span class="material-symbols-rounded">graphic_eq</span>
+alt = calender image
 
-Music Player
+Wondering where
+your tasks are?
 
-<span class="material-symbols-rounded">queue_music</span>
+Build a todo app ✅
 
+aria-label = Remove task
+<ion-icon name="trash-outline" aria-hidden="true"></ion-icon>
 
+title = Add a task in 'My Day'
 
-#---------- PLAYER ----------#
+aria-label = Add task
 
-alt = Happy Moments (Master) Album Poster
+placeholder = Try typing 'Jogging 20min at morning'
 
-Happy Moments (Master)
+Add a task
 
-No Spirit
-2022
+<ion-icon name="add-outline" class="add-icon" aria-hidden="true"></ion-icon>
 
-No Spirit x Tonion
+<ion-icon name="ellipse-outline" class="circle-icon" aria-hidden="true"></ion-icon>
 
-0:00
-1:00
+App info
 
-<span class="material-symbols-rounded">volume_up</span>
+Version:
+1.0.0
 
-<span class="material-symbols-rounded">repeat</span>
-<span class="material-symbols-rounded active-icon">repeat_one</span>
+Publish:
+06 July 2022
 
-<span class="material-symbols-rounded">skip_previous</span>
+Last Update:
+06 July 2022
 
-<span class="material-symbols-rounded">play_arrow</span>
-<span class="material-symbols-rounded active-icon">pause</span>
+Created by:
+Geraldin Marquez
 
-<span class="material-symbols-rounded">skip_next</span>
-
-<span class="material-symbols-rounded">shuffle</span>
-
-
-
-#---------- PLAYLIST ----------#
-
-alt = Happy Moments (Master) Album Poster
-
-<span class="material-symbols-rounded">equalizer</span>
+Ok
