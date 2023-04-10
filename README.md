@@ -1,19 +1,19 @@
 <div align="center">
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/music-player)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/music-player?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/music-player?style=social)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/taskbuddy)
+  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/taskbuddy?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/taskbuddy?style=social)
   [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/jbMd2NVFrZk?style=social)](https://youtu.be/jbMd2NVFrZk)
+  [![YouTube Video Views](https://img.shields.io/youtube/views/BWmL66b9bOo?style=social)](https://youtu.be/BWmL66b9bOo)
 
   <br />
   <br />
 
-  <h2 align="center">Web Music Player</h2>
+  <h2 align="center">Taskbuddy - Todo app</h2>
 
-  A fully responsive web music player using vanilla javascript, <br />Responsive for all devices, build using html, css, and javascript.
+  Taskbuddy is a fully responsive todo app, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-  <a href="https://codewithsadee.github.io/music-player/"><strong>➥ Live Demo</strong></a>
+  <a href="https://codewithsadee.github.io/taskbuddy/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
@@ -21,7 +21,7 @@
 
 ### Demo Screeshots
 
-![Music Player Desktop Demo](./readme-images/desktop.png "Desktop Demo")
+![Taskbuddy Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
 ### Prerequisites
 
@@ -31,18 +31,18 @@ Before you begin, ensure you have met the following requirements:
 
 ### Run Locally
 
-To run **Music Player** locally, run this command on your git bash:
+To run **Taskbuddy** locally, run this command on your git bash:
 
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/music-player.git
+sudo git clone https://github.com/codewithsadee/taskbuddy.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/music-player.git
+git clone https://github.com/codewithsadee/taskbuddy.git
 ```
 
 ### Contact
