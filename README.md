@@ -1,44 +1,54 @@
-# Anon - An eCommerce Website
+<div align="center">
+  
+  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/music-player)
+  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/music-player?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/music-player?style=social)
+  [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
+  [![YouTube Video Views](https://img.shields.io/youtube/views/jbMd2NVFrZk?style=social)](https://youtu.be/jbMd2NVFrZk)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/anon-ecommerce-website)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/anon-ecommerce-website?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/anon-ecommerce-website?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
-[![YouTube Video Views](https://img.shields.io/youtube/views/3l8Lob4ysI0?style=social)](https://youtu.be/3l8Lob4ysI0)
+  <br />
+  <br />
 
-Anon is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
+  <h2 align="center">Web Music Player</h2>
 
-## Demo
+  A fully responsive web music player using vanilla javascript, <br />Responsive for all devices, build using html, css, and javascript.
 
-![Anon Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![Anon Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+  <a href="https://codewithsadee.github.io/music-player/"><strong>➥ Live Demo</strong></a>
 
-## Prerequisites
+</div>
+
+<br />
+
+### Demo Screeshots
+
+![Music Player Desktop Demo](./readme-images/desktop.png "Desktop Demo")
+
+### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
 * [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-## Installing Anon
+### Run Locally
 
-To install **Anon**, follow these steps:
+To run **Music Player** locally, run this command on your git bash:
 
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/anon-ecommerce-website.git
+sudo git clone https://github.com/codewithsadee/music-player.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/anon-ecommerce-website.git
+git clone https://github.com/codewithsadee/music-player.git
 ```
 
-## Contact
+### Contact
 
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
 
-## License
+### License
 
 This project is **free to use** and does not contains any license.
